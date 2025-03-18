@@ -2,11 +2,11 @@
 import React from 'react'
 
 import './App.css'
-
+import WelcomePage from './pages/WelcomePage'
 function App() {
   return (
     <>
-    <h1 className='bg-slate-500 font-bold'> Welcome to the my capstone project alx for book library -app tha build by React and tailwind css</h1> 
+    <WelcomePage></WelcomePage>
     </>
   )
 }
