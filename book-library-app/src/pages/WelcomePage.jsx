@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'; // Importing  motion from framer-motion this used to animation for paragraph , head and button
 import welcomeBackground from "../assets/welcome-background.jpeg";
@@ -6,7 +8,7 @@ import welcomeBackground from "../assets/welcome-background.jpeg";
 const WelcomePage = () => {
   return (
     <div 
-      className="relative flex flex-col items-center justify-center min-h-screen w-full text-white"
+      className="relative flex flex-col items-center justify-center min-h-screen w-full text-white bg-cover bg-center"
       style={{
         backgroundImage: `url(${welcomeBackground})`,
         backgroundSize: 'cover',
@@ -32,12 +34,12 @@ const WelcomePage = () => {
           Welcome to Book Library! A gateway to endless knowledge and imagination. Whether you’re a curious learner, an avid reader, or a casual browser, our library helps you explore millions of books effortlessly. Search, borrow, and enjoy your favorite books anytime, anywhere. From timeless classics to the latest bestsellers, your reading journey begins here. Discover, learn, and grow with us.
         </motion.p>
         <motion.button
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 1.5 }}
-          className="bg-blue-500 text-white px-8 py-4 rounded-full text-lg font-bold shadow-md hover:bg-blue-600 focus:outline-none"
-        >  Get Started
-        </motion.button>
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 1, delay: 1.5 }}
+  className="bg-blue-500 text-white px-8 py-4 rounded-full text-lg font-bold shadow-md hover:bg-blue-600 focus:outline-none"
+> <Link to="/signup">Get Started</Link>
+</motion.button>
       </div>
     </div>
   );
