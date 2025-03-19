@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'; // Importing  motion from framer-motion this used to animation for paragraph , head and button
 import welcomeBackground from "../assets/welcome-background.jpeg";
